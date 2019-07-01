@@ -1,0 +1,73 @@
+{
+  "name": "gadozap",
+  "private": true,
+  "version": "1.0.0",
+  "description": "GadoZap",
+  "repository": "",
+  "license": "UNLICENSED",
+  "framework7": {
+    "cwd": "/var/www/html/aprendizado/GadoApp",
+    "type": [
+      "web",
+      "cordova"
+    ],
+    "name": "GadoZap",
+    "pkg": "io.framework7.myapp",
+    "framework": "core",
+    "template": "single-view",
+    "bundler": false,
+    "cordova": {
+      "folder": "cordova",
+      "platforms": [
+        "ios",
+        "android",
+        "electron"
+      ],
+      "plugins": [
+        "cordova-plugin-statusbar",
+        "cordova-plugin-keyboard",
+        "cordova-plugin-splashscreen",
+        "cordova-plugin-wkwebview-engine"
+      ]
+    },
+    "theming": {
+      "customColor": false,
+      "color": "#007aff",
+      "darkTheme": false,
+      "iconFonts": true,
+      "fillBars": false
+    },
+    "customBuild": false
+  },
+  "scripts": {
+    "serve": "http-server ./www/ -o -c 1 -a localhost -p 8080",
+    "start": "npm run serve",
+    "build-cordova": "node ./build/build.js && cd cordova && cordova build",
+    "build-cordova-ios": "node ./build/build.js && cd cordova && cordova build ios",
+    "build-cordova-android": "node ./build/build.js && cd cordova && cordova build android",
+    "build-cordova-electron": "node ./build/build.js && cd cordova && cordova build electron",
+    "cordova-electron": "node ./build/build.js && cd cordova && cordova run electron --nobuild",
+    "postinstall": "cpy './node_modules/framework7-icons/fonts/*.*' './www/fonts/'"
+  },
+  "browserslist": [
+    "Android >= 5",
+    "IOS >= 9.3",
+    "Edge >= 15",
+    "Safari >= 9.1",
+    "Chrome >= 49",
+    "Firefox >= 31",
+    "Samsung >= 5"
+  ],
+  "dependencies": {
+    "dom7": "^2.1.3",
+    "framework7": "^4.4.3",
+    "framework7-icons": "^2.3.1",
+    "template7": "^1.4.2"
+  },
+  "devDependencies": {
+    "cpy": "^7.3.0",
+    "cpy-cli": "^2.0.0",
+    "http-server": "^0.11.1",
+    "rimraf": "^2.6.3"
+  }
+}
