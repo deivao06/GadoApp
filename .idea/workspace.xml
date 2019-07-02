@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cea80429-cd61-4038-8a75-b058e3dc1de6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/pages/forms/register-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/pages/forms/register-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/login.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +73,7 @@
       <workItem from="1561559849748" duration="7267000" />
       <workItem from="1561579191079" duration="2922000" />
       <workItem from="1562006979345" duration="1665000" />
-      <workItem from="1562100487536" duration="334000" />
+      <workItem from="1562100487536" duration="1044000" />
     </task>
     <servers />
   </component>
