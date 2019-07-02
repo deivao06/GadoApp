@@ -53,7 +53,3 @@ $$(".panel-left .btn-sair").on('click', function (event) {
   localStorage.clear();
   app.loginScreen.open("#my-login-screen");
 });
-
-$$(document).on('page:init', '.page[data-name="register-form"]', function (e) {
-  app.loginScreen.close("#my-login-screen");
-});
